@@ -1,0 +1,20 @@
+version: '2.2'
+services:
+  service1:
+    image: myapp
+    container_name: container01
+  service2:
+    image: myapp
+    container_name: container02
+  service3:
+    image: myapp
+    container_name: container03
+    networks:
+      - net01
+  service4:
+    image: myapp
+    container_name: container04
+    networks:
+      - net01
+networks:
+  net01:

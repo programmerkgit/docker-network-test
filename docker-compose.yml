@@ -3,6 +3,8 @@ services:
   service1:
     image: myapp
     container_name: container01
+    ports:
+      - 3000:3000
   service2:
     image: myapp
     container_name: container02
